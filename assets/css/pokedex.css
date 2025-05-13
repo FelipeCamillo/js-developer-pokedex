@@ -1,29 +1,29 @@
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0;
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 
 .normal {
     background-color: #a6a877;
 }
-
+ 
 .grass {
-    background-color: #77c850;
+    background-color: #49d0b0;
 }
 
 .fire {
-    background-color: #ee7f30;
+    background-color: #fc6c6d;
 }
 
 .water {
-    background-color: #678fee;
+    background-color: #75bffc;
 }
 
 .electric {
-    background-color: #f7cf2e;
+    background-color: #ffd76f;
 }
 
 .ice {
@@ -49,7 +49,7 @@
 .psychic {
     background-color: #f65687;
 }
-
+ 
 .dark {
     background-color: #725847;
 }
@@ -82,21 +82,23 @@
     display: flex;
     flex-direction: column;
     margin: .5rem;
-    padding: 1rem;
+    padding: 2rem 1rem;
     border-radius: 1rem;
+    text-decoration: none;
 }
 
 .pokemon .number {
-    color: #000;
-    opacity: .3;
+    color: #fff;
     text-align: right;
     font-size: .625rem;
 }
 
 .pokemon .name {
     text-transform: capitalize;
-    color: #fff;
-    margin-bottom: .25rem;
+    color: #FFF;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .pokemon .detail {
@@ -113,18 +115,20 @@
 }
 
 .pokemon .detail .types .type {
-    color: #fff;
-    padding: .25rem .5rem;
-    margin: .25rem 0;
-    font-size: .625rem;
-    border-radius: 1rem;
     filter: brightness(1.1);
     text-align: center;
+    color: #FFFFFF;
+    border-radius: 1rem;
+    margin: .25rem 0rem;
+    padding: .25rem .5rem;
+    font-size: .625rem;
 }
 
 .pokemon .detail img {
-    max-width: 100%;
-    height: 70px;
+    width: 293px;
+    height: auto;
+    max-width: 75%;
+    object-fit: contain;
 }
 
 .pagination {
@@ -137,16 +141,20 @@
 }
 
 .pagination button {
-    padding: .25rem .5rem;
-    margin: .25rem 0;
-    font-size: .625rem;
-    color: #fff;
     background-color: #6c79db;
+    color: white;
     border: none;
     border-radius: 1rem;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .825rem;
 }
 
-@media screen and (min-width: 380px) {
+.pagination button:hover {
+    background-color: #2131aa;
+}
+
+@media screen and (min-width: 373px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
     }
